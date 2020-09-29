@@ -487,6 +487,23 @@ input:checked + .slider:before {
     z-index: 2;
 }
 
+.portfolio_buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+.portfolio_buttons .btn{
+    margin-bottom: 1em;
+}
+
+.portfolio_item:hover .portfolio_buttons{
+    visibility: visible;
+}
+
+
 .portfolio_item:hover, .portfolio_item:focus .portfolio_img{
     transform: scale(1.2);
     opacity: .75;
@@ -495,6 +512,11 @@ input:checked + .slider:before {
 .portfolio_item_title {
     color: var(--clr-dark);
 }
+
+.portfolio_buttons{
+    visibility: hidden;
+}
+
 
 
 
